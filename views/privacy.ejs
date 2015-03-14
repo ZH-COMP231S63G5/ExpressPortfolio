@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    File name : index.html
+    Author's name : Zhixiang Hu
+    Web site name : Zhixiang Hu Protfolio Site
+    This is index page of the web site
+    -->
+
+    <title><%= title %></title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/app.css" rel="stylesheet" />
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body onload="main();">
+  
+  <% include partials/header.ejs %>
+  
+    <!-- breadcrumb from here-->
+<div class="container hidden-xs">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Privacy Policy</li>
+        </ol>
+    </div>
+</div>
+
+<!-- content from here--->
+<div class="row">
+    <div class="container">
+        <div class="jumbotron voffset3">
+            <h2>Privacy Policy :</h2>
+            <h6>Protecting the privacy of our clients and users of our sites is important to all of us. </h6>
+            <h5>Purposes for Collection of Personal Information</h5>
+            <h6>Collecting user email is to maintain communication and sending an email with your inquiry.</h6>
+            <h5>Privacy Policy Changes</h5>
+            <h6>Although most changes are likely to be minor, Zhixiang Hu may change its Privacy Policy from time to time, and in Zhixiang Hu's discretion. I encourages visitors to frequently check this page for any changes to its Privacy Policy.</h6>
+        </div>
+        </div>
+</div>
+      
+  <% include partials/footer.ejs %>
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>

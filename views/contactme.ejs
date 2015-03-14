@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    File name : index.html
+    Author's name : Zhixiang Hu
+    Web site name : Zhixiang Hu Protfolio Site
+    This is index page of the web site
+    -->
+
+    <title><%= title %></title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/app.css" rel="stylesheet" />
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body onload="main();">
+  
+  <% include partials/header.ejs %>
+  
+    <!-- breadcrumb from here-->
+    <div class="container hidden-xs">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="index">Home</a></li>
+                <li class="active">Contact Me</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- content from here--->
+    <div class="row">
+        <div class="container">
+
+            <h3>Contact me</h3>
+
+            <div class="voffset5">
+                <form name="contact" method="post" target="_self" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="subject" class="col-sm-2 control-label">Subject :</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="col-sm-2 control-label">Type :</label>
+                        <div class="col-sm-4">
+                            <select class="form-control">
+                                <option value="develop">Developing</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="suggest">Suggestions</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Your Email :</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Content :</label>
+                        <div class="col-sm-5">
+                            <textarea class="form-control" rows="3" placeholder="Content"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>mobile : +1 647 633 6916</li>
+                <li>email : johnnyhu@gmail.com</li>
+                <li>address : 941 Progress Ave, Toronto, Centennial College</li>
+            </ul>
+
+            <!--keep connected panel-->
+            <div class="container">
+                <div class="col-md-4 col-sm-4">
+                    <a href="https://www.facebook.com/johnny.hu.906"><img src="images\fb.png" class="img-responsive" alt="Facebook" /></a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <a href="https://plus.google.com/112122800212496080131"><img src="images\gplus.png" class="img-responsive" alt="Google Plus" /></a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <a href="http://ca.linkedin.com/pub/johnny-hu/55/610/47a/"><img src="images\in.png" class="img-responsive" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+  <% include partials/footer.ejs %>
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>

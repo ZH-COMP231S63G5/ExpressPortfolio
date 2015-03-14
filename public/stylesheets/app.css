@@ -1,0 +1,84 @@
+﻿/***************************
+        File name : app.css
+        Author's name : Zhixiang Hu
+        Web site name : Zhixiang Hu Protfolio Site
+        This is style sheet of the web site
+***************************/
+.carousel-indicators li {
+  background-color: #669966;
+}
+.carousel-indicators .active {
+  background-color: #FF7600;
+}
+b3 .b3 {
+    color: #ff7600;
+}
+p.p_description {
+    color: #669966;
+}
+.app_image {
+    opacity: 1;
+}
+.row-even {
+    background-color: #F9E596;
+}
+.row-odd {
+background-color:#0DFFD8;
+}
+.row-aboutme {
+    background-color: #76B2F2;
+}
+.row-service {
+    background-color: #DB5F41;
+    color: #FFFFFF;
+}
+.voffset  { margin-top: 2px; margin-bottom: 2px;}
+.voffset1 { margin-top: 5px; margin-bottom: 5px;}
+.voffset2 { margin-top: 10px; margin-bottom: 10px;}
+.voffset3 { margin-top: 15px; margin-bottom: 15px;}
+.voffset4 { margin-top: 30px;margin-bottom: 30px; }
+.voffset5 { margin-top: 40px; margin-bottom: 40px;}
+.voffset6 { margin-top: 60px; margin-bottom: 60px;}
+.voffset7 { margin-top: 80px; margin-bottom: 80px;}
+.voffset8 { margin-top: 100px; margin-bottom: 100px;}
+.voffset9 { margin-top: 150px; margin-bottom: 150px;}
+.list-aboutme {
+    color: #176DF9;
+}
+.list-service {
+    font-size: large;
+}
+@media screen and (max-width: 2000px) {
+    h1 {font-size:6em;}
+    h2 {font-size:3em;}
+    h3{ font-size:2.5em;}
+    li {font-size:2em;}
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {font-size: 4em;}
+    h2 {font-size: 2em;}
+    h3{ font-size: 1.7em;}
+    li {font-size: 1.5em;}
+}
+
+@media screen and (max-width: 800px) {
+    h1 {font-size:3em;}
+    h2 {font-size:1.5em;}
+    h3{ font-size:1.2em;}
+    li {font-size:1em;}
+}
+
+@media screen and (max-width: 560px) {
+    h1 {font-size:2em;}
+    h2 {font-size:1em;}
+    h3{ font-size:0.9em;}
+    li {font-size:0.8em;}
+}
+
+@media screen and (max-width: 380px) {
+    h1 {font-size:1.5em;}
+    h2 {font-size:0.8em;}
+    h3{ font-size:0.6em;}
+    li {font-size:0.5em;}
+}

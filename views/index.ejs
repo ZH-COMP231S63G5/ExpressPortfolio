@@ -12,21 +12,54 @@
 
     <title><%= title %></title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/app.css" rel="stylesheet" />
 
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body onload="main();">
   
   <% include partials/header.ejs %>
   
+<!--Personal Tagline-->
+    <div class="row row-even">
+        <div class="container voffset6">
+
+            <h1 class="voffset5">Welcome to my Tech Space!</h1>
+            <div class="voffset3">
+                <h2>Personal Tagline</h2>
+                <h4>
+                    <ul class="voffset5">
+                        <li class="voffset4">Ultimate technology fan</li>
+                        <li class="voffset4">Combine technologies and business requirements</li>
+                        <li class="voffset4">Create excellent user experience</li>
+                    </ul>
+                </h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-2 col-sm-2">
+                <a href="https://www.facebook.com/johnny.hu.906"><img src="images\fb.png" class="img-responsive" alt="Facebook"/></a>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <a href="https://plus.google.com/112122800212496080131"><img src="images\gplus.png" class="img-responsive" alt="Google Plus"/></a>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <a href="http://ca.linkedin.com/pub/johnny-hu/55/610/47a/"><img src="images\in.png" class="img-responsive" alt="LinkedIn"/></a>
+            </div>
+            <div class="col-md-6">
+                <div class="voffset6 text-center">
+                    <a href="projects.html" class="btn btn-danger btn-lg">Explor My Works</a>
+                </div>
+            </div>
+        </div>
+    </div>      
+      
+    <% include partials/projectCarousel.ejs %>
       
   <% include partials/footer.ejs %>
     <script src="javascripts/jquery-1.11.2.min.js"></script>
-    <script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/app.js"></script>
   </body>
 </html>

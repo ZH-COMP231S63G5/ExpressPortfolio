@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    File name : index.html
+    Author's name : Zhixiang Hu
+    Web site name : Zhixiang Hu Protfolio Site
+    This is index page of the web site
+    -->
+
+    <title><%= title %></title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/app.css" rel="stylesheet" />
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body onload="main();">
+  
+  <% include partials/header.ejs %>
+  
+
+    <!-- breadcrumb from here-->
+    <div class="container hidden-xs">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="index">Home</a></li>
+                    <li class="active">About Me</li>
+                </ol>
+            </div>
+    </div>
+
+    <!-- content from here--->
+<div class="row row-aboutme">
+    <div class="container voffset7">
+        <div class="col-md-6 col-sm-6">
+            <img class="img-responsive" src="images/aboutme.jpg"/>
+            <p></p>
+            <a href="images/cv.docx" class="btn btn-success center-block"><h4>Download My Resume</h4></a>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <h1>About me</h1>
+            <h2>Programming experiences</h2>
+            <ul class="voffset4 list-aboutme">
+                <li class="voffset4 list-aboutme">BASIC on Apple II</li>
+                <li class="voffset4 list-aboutme">C++, QuickBASIC, 8086 Assembly</li>
+                <li class="voffset4 list-aboutme">dBase III, FoxBase, FoxPro</li>
+                <li class="voffset4 list-aboutme">Visual Basic, Delphi, PowerBuilder</li>
+                <li class="voffset4 list-aboutme">CSharp, VB.NET, MS T-SQL, Java, Oracle, Android, RESTful, WCF, LINQ, Entity Framework, iTextsharp</li>
+                <li class="voffset4 list-aboutme">HTML, ASP, CSS, PHP, ASP.NET, Javascript, XML, VBScript</li>
+                <li class="voffset4 list-aboutme">Excel-VBA, MS-Access</li>
+            </ul>
+        </div>
+    </div>
+</div>
+     
+     
+      
+  <% include partials/footer.ejs %>
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>

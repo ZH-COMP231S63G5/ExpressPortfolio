@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    File name : index.html
+    Author's name : Zhixiang Hu
+    Web site name : Zhixiang Hu Protfolio Site
+    This is index page of the web site
+    -->
+
+    <title><%= title %></title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/app.css" rel="stylesheet" />
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body onload="main();">
+  
+  <% include partials/header.ejs %>
+  
+  
+<!-- breadcrumb from here-->
+<div class="container hidden-xs">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Site Map</li>
+        </ol>
+    </div>
+</div>
+
+<!-- content from here--->
+<div class="row">
+    <div class="container">
+        <div class="jumbotron voffset3">
+            <h2>Site Map:</h2>
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="aboutme">About Me</a></li>
+                <li><a href="projects">Projects</a></li>
+                <ul>
+                    <li><a href="projects\project1">Resturant Map</a></li>
+                    <li><a href="projects\project2">Weather Inquiry</a></li>
+                    <li><a href="projects\project3">Resturant Order</a></li>
+                </ul>
+                <li><a href="services">Services</a></li>
+                <li><a href="https://github.com/JohnnyHu9/CC_W14">GitHub</a></li>
+                <li><a href="contactme">Contact Me</a></li>
+                <li><a href="term">Terms of Use</a></li>
+                <li><a href="privacy">Privacy Policy</a></li>
+            </ul>
+
+        </div>
+        </div>
+</div>
+
+      
+  <% include partials/footer.ejs %>
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>
