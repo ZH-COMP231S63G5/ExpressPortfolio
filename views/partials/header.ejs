@@ -1,7 +1,7 @@
     <!--Nav bar from here-->
     <div class="navbar navbar-inverse">
          <div class="container">
-             <a href="index.html" class="navbar-brand"><img src="images/logo.png"/></a>
+             <a href="/" class="navbar-brand"><img src="../images/logo.png"/></a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -10,20 +10,20 @@
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li <% if (page_name === 'index') { %>class="active" <% } %>   ><a href="/"><b class="glyphicon glyphicon-home"></b>   Home</a></li>
-                    <li <% if (page_name === 'aboutme') { %>class="active" <% } %> ><a href="aboutme"><b class="glyphicon glyphicon-user"></b>   About Me</a></li>
-                    <li <% if (page_name === 'index') { %>class="services" <% } %>   ><a href="services"><b class="glyphicon glyphicon-tasks"></b>   Services</a></li>
+                    <li <% if (page_name === 'aboutme') { %>class="active" <% } %> ><a href="/aboutme"><b class="glyphicon glyphicon-user"></b>   About Me</a></li>
+                    <li <% if (page_name === 'services') { %>class="active" <% } %>   ><a href="/services"><b class="glyphicon glyphicon-tasks"></b>   Services</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">  Projects <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="projects/project1">Resturant Map</a></li>
-                            <li><a href="projects/project2">Weather Inquiry</a></li>
-                            <li><a href="projects/project3">Resturant Order</a></li>
+                            <li><a href="/projects/project1">Resturant Map</a></li>
+                            <li><a href="/projects/project2">Weather Inquiry</a></li>
+                            <li><a href="/projects/project3">Resturant Order</a></li>
                         </ul>
                     </li>
 
                     <li><a href="https://github.com/ZH-COMP231S63G5"><b class="glyphicon glyphicon-folder-open"></b>   GitHub</a></li>
-                    <li <% if (page_name === 'contactme') { %>class="active" <% } %>   ><a href="contactme"><b class="glyphicon glyphicon-envelope"></b>   Contact</a></li>
+                    <li <% if (page_name === 'contactme') { %>class="active" <% } %>   ><a href="/contactme"><b class="glyphicon glyphicon-envelope"></b>   Contact</a></li>
                 </ul>
             </div>
 

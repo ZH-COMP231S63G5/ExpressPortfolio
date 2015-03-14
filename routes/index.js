@@ -35,6 +35,25 @@ router.get('/projects', function(req, res, next) {
 });
 
 
+/* GET project1 page. */
+router.get('/projects/project1', function(req, res, next) {
+  res.render('projects/project1', { title: 'Zhixiang Hu Protfolio Site',
+                        page_name: "project1"});
+});
+
+/* GET project2 page. */
+router.get('/projects/project2', function(req, res, next) {
+  res.render('projects/project2', { title: 'Zhixiang Hu Protfolio Site',
+                        page_name: "project2"});
+});
+
+/* GET project3 page. */
+router.get('/projects/project3', function(req, res, next) {
+  res.render('projects/project3', { title: 'Zhixiang Hu Protfolio Site',
+                        page_name: "project3"});
+});
+
+
 /* GET term page. */
 router.get('/term', function(req, res, next) {
   res.render('term', { title: 'Zhixiang Hu Protfolio Site',
